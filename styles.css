@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+.navigation {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.navigation input#toggle-menu {
+    display: none;
+}
+
+.navigation .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navigation .brand-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navigation .nav-links li {
+    margin-left: 35px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 0;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    color: #ddd;
+}
+
+.landing-page {
+    height: 100vh;
+    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped") center center/cover no-repeat fixed;
+}
+
+.landing-page .intro-text {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.landing-page .intro-text h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.landing-page .intro-text p {
+    font-size: 20px;
+}
+
+.intro-text a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.intro-text a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.services-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+}
+
+.services-section p {
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.about-section {
+    padding: 80px 15px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.about-section p {
+    margin-bottom: 40px;
+}
+
+.story-details,
+.mission-details,
+.team-info {
+    padding: 30px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-section {
+    padding: 80px 15px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.contact-section p {
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 45%;
+}
+
+.form-area form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-area input,
+.form-area textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-area button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-area button:hover {
+    background-color: #444;
+}
+
+.info {
+    text-align: left;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.info i {
+    margin-right: 10px;
+}
